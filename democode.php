@@ -7,7 +7,7 @@
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $msg=$_POST['txtaddress'];
+$msg=$_POST['txtaddress'];
 
     if(isset($_POST['btnsubmit']))
       {
