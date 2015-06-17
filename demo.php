@@ -1,5 +1,6 @@
 <?php
 include('democode.php');
+session_start();
 ?>
 
 <html>
@@ -38,7 +39,7 @@ tinymce.init({
 	
   <H1>Add here</h1>
   <!--  The form that will be parsed by jQuery before submit  -->
-  <form action="" method="post" id="register1-form" novalidate="novalidate">
+  <form action="" method="post" id="register-form" novalidate="novalidate">
   
    <table>
  
