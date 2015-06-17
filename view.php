@@ -109,7 +109,8 @@ $details=mysqli_fetch_array($result);
    </tr>
    <tr>
    <td colspan=5> 
-	   <textarea name="txtaddress" style="width:100%" value="<?php echo $details['message'] ?>"/>  </td>
+	   <textarea name="txtaddress" style="width:100%"><?php echo $details['message'] ?></textarea>
+</td>
    </tr>
     
    <tr>
