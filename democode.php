@@ -29,7 +29,6 @@ $msg=$_POST['txtaddress'];
     if(isset($_POST['btnupdate']))
       {
 	$query="UPDATE `info` SET `first`='$firstname',`middle`='$Middle',`last`='$lastname',`email`='$email',`password`=md5('$password'),`message`='$msg' Where `id`='$id'";
-	print_r($query);
 	$result=mysqli_query($con,$query) ;
 	if($result)
 	  {
@@ -37,7 +36,7 @@ $msg=$_POST['txtaddress'];
 	    echo "<h1>Data Updated Successfully</h1>";
 	  } else { echo "Update Error"; }
 	//~ showdata();
-	//header("Location: $self?alldone=1");
+	header("Location: $self?alldone=1");
       }
 
     if(isset($_POST['btndelete']))
