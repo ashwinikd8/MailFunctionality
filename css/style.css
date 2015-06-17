@@ -1,0 +1,31 @@
+
+.error {
+   color: red;
+}
+
+table,td {
+      
+} 
+
+th
+{
+     text-align: left;
+}
+
+#tblview,#tblviewdata
+{
+border : 1px solid black;
+
+}
+
+#tblview  > :first-child
+{
+border : 1px solid black;
+}
+
+
+
+#divicon { background: url(/demo/images/jquery-ui-3E3E3E.gif) 0 0 no-repeat; }
+img{ background-position-y: -160px; 
+ background-position-y: -97px; }
+
