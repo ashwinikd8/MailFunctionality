@@ -1,6 +1,5 @@
 <?php
 include('democode.php');
-session_start();
 ?>
 
 <html>
