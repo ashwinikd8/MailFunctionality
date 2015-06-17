@@ -57,17 +57,16 @@ $msg=$_POST['txtaddress'];
       {
 	$query="SELECT * FROM `info` Where `id`='$id'";
 	$result=mysqli_query($con,$query) ;
-	$details=mysqli_fetch_array($result); 
+	$details=mysqli_fetch_array($result);
       }
 
     if(isset($_POST['btndeleteall']))
       {
 	foreach($_POST['chkmark'] as $check)
 	  {
-	    print_r($check);
-	    $query="SELECT * FROM `info` Where `id`='$check'";
-	    print_r($query);
-
+	    $query="Delete from `info` Where `id`='$check'";
+	    $result=mysqli_query($con,$query) ;
+	    $details=mysqli_fetch_array($result);
 	  }
       }
 
