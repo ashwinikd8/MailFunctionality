@@ -16,6 +16,8 @@ include('democode.php');
 background-color: gray;
 background-color: gray;
 }
+
+
 </style>
 <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
